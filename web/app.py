@@ -14,7 +14,7 @@ from config import DB_CONFIG
 st.title("📈 Stock Pattern Analysis – Bullish Flag Detector")
 
 # Available tickers
-tickers = ["AAPL", "MSFT", "SPY"]
+tickers = ["SPY","AAPL", "MSFT"]
 
 # User input: Select a stock
 selected_ticker = st.selectbox("Select a Stock Ticker:", tickers)
