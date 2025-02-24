@@ -32,7 +32,7 @@ def insert_stock_data(ticker):
     insert_stock_ticker(ticker)
     
     stock = yf.Ticker(ticker)
-    df = stock.history(period="10y")  
+    df = stock.history(period="3d")  
     
     
     df.reset_index(inplace=True)

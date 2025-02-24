@@ -1,6 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 import mysql.connector
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from config import DB_CONFIG
 
 # Yahoo Finance Scraper for latest data
@@ -22,6 +27,7 @@ cursor = conn.cursor()
 tickers = ["AAPL", "MSFT", "SPY"]
 for ticker in tickers:
     price = get_latest_price(ticker)
+    print(price)
     if price:
         cursor.execute("""
             UPDATE historical_data SET close_price = %s
