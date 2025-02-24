@@ -8,4 +8,3 @@ streamlit
 plotly
 sqlalchemy
 talib
-TA-Lib
