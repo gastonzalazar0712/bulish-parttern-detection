@@ -28,5 +28,8 @@ Clone the repository and install the required Python packages.
 git clone https://github.com/your-repo/bullish-flag-pattern-detection.git
 cd bullish-flag-pattern-detection
 pip install -r requirements.txt
+```
+### Usage
+```bash
 streamlit run web/app.py
-
+```
